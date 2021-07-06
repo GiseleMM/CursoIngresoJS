@@ -1,8 +1,19 @@
-/*
+/*Medina Gisele DIV H
+Ejercicio 5
 Debemos lograr tomar nombre y edad por ID y mostrarlos concatenados 
 ej.: "Usted se llama José y tiene 66 años" 	*/
 function mostrar()
 {	
-	alert("ok");
+	var nombre;
+	var edad;
+	var mensaje;
+	nombre=txtIdNombre.value;
+	edad=txtIdEdad.value;
+	alert("Usted se llama "+nombre + "y tiene "+edad +"años");
+
 }
 
+/*
+txtIdNombre
+txtIdEdad
+*/
