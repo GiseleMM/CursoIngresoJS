@@ -1,4 +1,5 @@
-/*
+/*Gisele Medina div H
+ejercicio 9
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 mostrar el número máximo y el número mínimo ingresado.*/
 function mostrar()
@@ -13,9 +14,32 @@ function mostrar()
 	respuesta='si';
 	while(respuesta=="si")
 	{
-		
+		numeroIngresado= prompt("Ingrese un número");
+		numeroIngresado= parseInt(numeroIngresado);
+
+		if(banderaDelPrimero=="es el primero")
+		{
+			numeroMaximo= numeroIngresado;
+			numeroMinimo= numeroIngresado;
+			banderaDelPrimero="no es el primero";
+		}
+		else
+		{
+			if(numeroIngresado>numeroMaximo)
+			{
+				numeroMaximo= numeroIngresado;
+			}
+			else
+			{
+				if(numeroIngresado<numeroMinimo)
+				{
+					numeroMinimo= numeroIngresado;
+				}
+
+			}
+		}
 		respuesta=prompt("desea continuar?");
 	}
 	txtIdMaximo.value=numeroMaximo;
-	txtIdMinimmo.value=numeroMinimo;
+	txtIdMinimo.value=numeroMinimo;//Error en id
 }//FIN DE LA FUNCIÓN
